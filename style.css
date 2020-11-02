@@ -24,8 +24,13 @@ nav {
 .dropdown-menu {
   border: 0 !important;
   left: 0;
-  margin-left: -30px;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.1);
+  min-width: 0;
+}
+
+.dropdown-item {
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .animate {
@@ -55,12 +60,6 @@ nav {
 }
 
 .two:hover {
-  color: #ffde17;
-  font-weight: bold;
-  background-color: rgba(0, 0, 0, 0);
-}
-
-.three:hover {
   color: #21409a;
   font-weight: bold;
   background-color: rgba(0, 0, 0, 0);
@@ -75,7 +74,7 @@ nav {
   width: 100vw;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(245, 245, 220, 0.5);
 }
 
 .author {
@@ -104,7 +103,6 @@ nav {
   left: 0;
   top: 80px;
   background-color: #21409a;
-  border-radius: 100px;
   height: 80px;
   width: 450px;
   padding: 5px 15px;
@@ -155,17 +153,29 @@ nav {
   margin-top: 14px;
 }
 
-/*.T {
-  color: #21409a;
+.socialMediaLinks {
+  position: absolute;
+  bottom: 0;
+  right: 140px;
+  margin-bottom: -25px;
+  opacity: 0;
 }
 
-.D {
-  color: #ffde17;
+.instagram {
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  background-image: url(images/instagram.png);
+  background-size: cover;
 }
 
-.P {
-  color: #be1e2d;
-}*/
+.facebook {
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  background-image: url(images/facebook.png);
+  background-size: cover;
+}
 
 /* Hero Title Animation */
 
@@ -291,9 +301,50 @@ nav {
   }
 }
 
-/* SubHero Content */
-.box {
-  margin-top: 98vh;
-  height: 600px;
-  background-color: rgba(190, 30, 45, 1);
+.author:hover .special {
+  animation-delay: 1.666s;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  animation-name: special;
 }
+
+.author:hover .socialMediaLinks{
+  animation-delay: 2.1s;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-name: socialMediaLinks
+}
+
+@keyframes special {
+  0% {
+    transform: translateY(0);
+    color: white;
+  }
+
+  100% {
+    transform: translateY(-154px);
+    color: black;
+  }
+}
+
+@keyframes socialMediaLinks {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+/* SubHero Content */
+.subHero {
+  margin-top: 98vh;
+  max-width: 100vw !important;
+  height: 300px;
+  background-color: rgba(245, 245, 220, 1);
+}
+
+
+ rgba(190, 30, 45, 1);
