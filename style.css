@@ -103,12 +103,12 @@ nav {
   left: 0;
   top: 80px;
   background-color: #21409a;
-  height: 80px;
+  height: 75px;
   width: 450px;
   padding: 5px 15px;
-  padding-left: 25px;
+  padding-left: 40px;
   padding-top: 10px;
-  margin: 0 auto;
+  margin: 8px auto;
   animation-duration: 2s;
   animation-fill-mode: both;
   animation-name: Travis;
@@ -156,8 +156,8 @@ nav {
 .socialMediaLinks {
   position: absolute;
   bottom: 0;
-  right: 140px;
-  margin-bottom: -25px;
+  right: 30px;
+  margin-bottom: -80px;
   opacity: 0;
 }
 
@@ -180,16 +180,31 @@ nav {
 /* Hero Title Animation */
 
 /* Hero Title Rest */
+@media (max-width: 576px) {
+  @keyframes Travis {
+    0% {
+      transform: translateX(177px);
+      color: white;
+    }
 
-@keyframes Travis {
-  0% {
-    transform: translateX(200px);
-    color: white;
+    100% {
+      transform: translateX(0);
+      color: white;
+    }
   }
+}
 
-  100% {
-    transform: translateX(0);
-    color: white;
+@media (min-width: 577px) {
+  @keyframes Travis {
+    0% {
+      transform: translateX(150px);
+      color: white;
+    }
+
+    100% {
+      transform: translateX(0);
+      color: white;
+    }
   }
 }
 
@@ -253,15 +268,31 @@ nav {
   animation-name: fourBoxesHover;
 }
 
-@keyframes TravisHover {
-  0% {
-    transform: translateX(0);
-    color: white;
-  }
+@media (max-width: 576px) {
+  @keyframes TravisHover {
+    0% {
+      transform: translateX(0);
+      color: white;
+    }
 
-  100% {
-    transform: translateX(200px);
-    color: white;
+    100% {
+      transform: translateX(150px);
+      color: white;
+    }
+  }
+}
+
+@media (min-width: 577px) {
+  @keyframes TravisHover {
+    0% {
+      transform: translateX(0);
+      color: white;
+    }
+
+    100% {
+      transform: translateX(200px);
+      color: white;
+    }
   }
 }
 
