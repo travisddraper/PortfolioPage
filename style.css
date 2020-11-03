@@ -183,7 +183,7 @@ nav {
 @media (max-width: 576px) {
   @keyframes Travis {
     0% {
-      transform: translateX(177px);
+      transform: translateX(150px);
       color: white;
     }
 
@@ -197,7 +197,7 @@ nav {
 @media (min-width: 577px) {
   @keyframes Travis {
     0% {
-      transform: translateX(150px);
+      transform: translateX(200px);
       color: white;
     }
 
@@ -245,25 +245,25 @@ nav {
 
 /* Hero Title Hover */
 .author:hover .Travis {
-  animation-duration: 2s;
+  animation-duration: 1s;
   animation-fill-mode: both;
   animation-name: TravisHover;
 }
 
 .author:hover .Draper {
-  animation-duration: 2s;
+  animation-duration: 1s;
   animation-fill-mode: both;
   animation-name: DraperHover;
 }
 
 .author:hover .Portfolio {
-  animation-duration: 2s;
+  animation-duration: 1s;
   animation-fill-mode: both;
   animation-name: PortfolioHover;
 }
 
 .author:hover .fourBoxes {
-  animation-duration: 2s;
+  animation-duration: 1s;
   animation-fill-mode: both;
   animation-name: fourBoxesHover;
 }
@@ -333,18 +333,19 @@ nav {
 }
 
 .author:hover .special {
-  animation-delay: 1.666s;
+  animation-delay: 0.8s;
   animation-duration: 2s;
   animation-fill-mode: both;
   animation-name: special;
 }
 
 .author:hover .socialMediaLinks{
-  animation-delay: 2.1s;
-  animation-duration: 1s;
+  animation-delay: 1.05s;
+  animation-duration: 0.5s;
   animation-fill-mode: both;
   animation-name: socialMediaLinks
 }
+
 
 @keyframes special {
   0% {
