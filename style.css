@@ -97,9 +97,7 @@ nav {
   padding-top: 120px;
   padding-left: 60px;
   background-color: #be1e2d;
-  animation-duration: 2s;
-  animation-fill-mode: both;
-  animation-name: Draper;
+  color: white !important;
 }
 
 .Travis {
@@ -108,16 +106,13 @@ nav {
   left: 0;
   top: 80px;
   background-color: #21409a;
+  color: white !important;
   height: 75px;
   width: 450px;
   padding: 5px 15px;
   padding-left: 40px;
   padding-top: 10px;
   margin: 8px auto;
-  animation-duration: 2s;
-  animation-fill-mode: both;
-  animation-name: Travis;
-  animation-iteration-count: 1 !important;
 }
 
 .Portfolio {
@@ -125,15 +120,13 @@ nav {
   bottom: 0;
   right: 20px;
   background-color: #ffde17;
+  color: white !important;
   height: 280px;
   width: 350px;
   text-align: right;
   margin-top: auto auto;
   padding-top: 220px;
   padding-right: 55px;
-  animation-duration: 2s;
-  animation-fill-mode: both;
-  animation-name: Portfolio;
 }
 
 .fourBoxes {
@@ -142,9 +135,6 @@ nav {
   margin: auto !important;
   left: 88px;
   bottom: 18px;
-  animation-duration: 2s;
-  animation-fill-mode: both;
-  animation-name: fourBoxes;
 }
 
 .black-box {
@@ -185,21 +175,31 @@ nav {
 /* Hero Title Animation */
 
 /* Hero Title Rest */
-@media (max-width: 576px) {
-  @keyframes Travis {
-    0% {
-      transform: translateX(150px);
-      color: white;
-    }
 
-    100% {
-      transform: translateX(0);
-      color: white;
-    }
+@media (min-width: 768px) {
+  .Draper {
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    animation-name: Draper;
+  }
+  .Travis {
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    animation-name: Travis;
+    animation-iteration-count: 1 !important;
+  }
+  .Portfolio {
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    animation-name: Portfolio;
+  }
+  .fourBoxes {
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    animation-name: fourBoxes;
   }
 }
 
-@media (min-width: 577px) {
   @keyframes Travis {
     0% {
       transform: translateX(200px);
@@ -211,83 +211,192 @@ nav {
       color: white;
     }
   }
-}
 
-@keyframes Draper {
-  0% {
-    transform: translateX(-200px);
-    color: white;
+  @keyframes Draper {
+    0% {
+      transform: translateX(-200px);
+      color: white;
+    }
+
+    100% {
+      transform: translateX(0);
+      color: white;
+    }
+
   }
 
-  100% {
+  @keyframes Portfolio {
+    0% {
+      transform: translateY(90px);
+      color: white;
+    }
+
+    100% {
+      transform: translateY(0);
+      color: white;
+    }
+  }
+
+
+  @keyframes fourBoxes {
+    0% {
+      transform: translateY(-200px);
+    }
+
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+/* Hero Title Mobile Rest */
+@media (max-width: 767px) {
+  .Travis {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: TravisHoverMOBILE;
+  }
+
+  .Draper {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: DraperHoverMOBILE;
+  }
+
+  .Portfolio {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: PortfolioHoverMOBILE;
+  }
+
+  .fourBoxes {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: fourBoxesHoverMOBILE;
+  }
+  .special {
+    animation-delay: 0.8s;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    animation-name: specialMOBILE;
+  }
+  .socialMediaLinks {
+    animation-delay: 1.05s;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    animation-name: socialMediaLinksMOBILE
+  }
+}
+
+@keyframes TravisHoverMOBILE {
+  0% {
     transform: translateX(0);
     color: white;
   }
 
+  100% {
+    transform: translateX(200px);
+    color: white;
+  }
 }
 
-@keyframes Portfolio {
+@keyframes DraperHoverMOBILE {
   0% {
+    transform: translateX(0);
+    color: white;
+  }
+
+  100% {
+    transform: translateX(-200px);
+    color: white;
+  }
+}
+
+@keyframes PortfolioHoverMOBILE {
+  0% {
+    transform: translateY(0);
+    color: white;
+  }
+
+  100% {
     transform: translateY(90px);
     color: white;
   }
+}
+
+@keyframes fourBoxesHoverMOBILE {
+  0% {
+    transform: translateY(0);
+    color: white;
+  }
 
   100% {
-    transform: translateY(0);
+    transform: translateY(-200px);
     color: white;
   }
 }
 
-@keyframes fourBoxes {
+
+@keyframes specialMOBILE {
   0% {
-    transform: translateY(-200px);
+    transform: translateY(0);
+    color: white;
   }
 
   100% {
-    transform: translateY(0);
+    transform: translateY(-154px);
+    color: black;
+  }
+}
+
+@keyframes socialMediaLinksMOBILE {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
   }
 }
 
 /* Hero Title Hover */
-.author:hover .Travis {
-  animation-duration: 1s;
-  animation-fill-mode: both;
-  animation-name: TravisHover;
-}
+@media (min-width: 768px) {
+  .author:hover .Travis {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: TravisHover;
+  }
 
-.author:hover .Draper {
-  animation-duration: 1s;
-  animation-fill-mode: both;
-  animation-name: DraperHover;
-}
+  .author:hover .Draper {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: DraperHover;
+  }
 
-.author:hover .Portfolio {
-  animation-duration: 1s;
-  animation-fill-mode: both;
-  animation-name: PortfolioHover;
-}
+  .author:hover .Portfolio {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: PortfolioHover;
+  }
 
-.author:hover .fourBoxes {
-  animation-duration: 1s;
-  animation-fill-mode: both;
-  animation-name: fourBoxesHover;
-}
-
-@media (max-width: 576px) {
-  @keyframes TravisHover {
-    0% {
-      transform: translateX(0);
-      color: white;
-    }
-
-    100% {
-      transform: translateX(150px);
-      color: white;
-    }
+  .author:hover .fourBoxes {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: fourBoxesHover;
+  }
+  .author:hover .special {
+    animation-delay: 0.8s;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    animation-name: special;
+  }
+  .author:hover .socialMediaLinks {
+    animation-delay: 1.05s;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    animation-name: socialMediaLinks
   }
 }
 
-@media (min-width: 577px) {
   @keyframes TravisHover {
     0% {
       transform: translateX(0);
@@ -299,7 +408,6 @@ nav {
       color: white;
     }
   }
-}
 
 @keyframes DraperHover {
   0% {
@@ -337,20 +445,6 @@ nav {
   }
 }
 
-.author:hover .special {
-  animation-delay: 0.8s;
-  animation-duration: 2s;
-  animation-fill-mode: both;
-  animation-name: special;
-}
-
-.author:hover .socialMediaLinks {
-  animation-delay: 1.05s;
-  animation-duration: 0.5s;
-  animation-fill-mode: both;
-  animation-name: socialMediaLinks
-}
-
 
 @keyframes special {
   0% {
@@ -378,21 +472,29 @@ nav {
 /* SubHero Content */
 .subHero {
   margin-top: 98vh;
-  max-width: 100vw !important;
-  background-color: rgba(245, 245, 220, 1);
 }
 
 .container-fluid {
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.PortfolioContentSheet {
+  background-color: rgba(245, 245, 220, 1);
 }
 
 .PortfolioContent {
   z-index: 2;
 }
-.row {
-  padding-left: px;
-  padding-right: px;
+
+.Portfoliotitle {
+
+}
+
+.coloredBoxRed {
+  height: 20px;
+  width: 20px;
+  background-color: #be1e2d;
 }
 
 .work-content,
@@ -405,7 +507,7 @@ nav {
 }
 
 .image-description,
-h3 a {
+h4 a {
   color: black;
 }
 
@@ -413,12 +515,20 @@ h3 a {
   text-align: right;
 }
 
-/*
-.otherWork {
-  display: flex;
-  flex-direction: column;
+a:hover {
+  text-decoration-color: #be1e2d;
 }
-*/
+
+.coloredBoxYellow {
+  height: 20px;
+  width: 20px;
+  margin-top: .8rem;
+  background-color: #ffde17;
+}
+
+.borderRight {
+  border-right: 4px solid #be1e2d;
+}
 
 .overlay {
   position: absolute;
@@ -451,21 +561,28 @@ h3 a {
 
   100% {
     opacity: 1;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(33, 64, 154, 0.5);
     color: white;
   }
 }
 
 .AboutMe {
   z-index: -999;
-  margin-top: 20vh;
+  margin-top: 28vh;
+  background-color: rgba(245, 245, 220, 1);
+}
+
+.AboutMeContainer {
+  z-index: 999 !important;
+}
+
+.color {
   background-color: rgba(245, 245, 220, 1);
 }
 
 .bigBlock {
-  margin-top: 100px;
+  margin-top: 34vh;
   height: 400px;
-  width: 800px;
 }
 /*
 .overlay {
