@@ -1,4 +1,4 @@
-/* Nav Content */
+/* Nav Content ----------------------------------------------- */
 
 a:hover {
   color: black;
@@ -37,6 +37,13 @@ nav {
   background-size: cover;
 }
 
+@media (min-width: 1200px) {
+  .icon {
+    height: 50px;
+    width: 50px;
+  }
+}
+
 .dropdown-menu {
   border: 0 !important;
   left: 0;
@@ -44,9 +51,21 @@ nav {
   min-width: 0;
 }
 
+@media (max-width: 767px) {
+  .dropdown-menu {
+    background-color: rgba(255, 222, 23, 0.8);
+  }
+}
+
 .dropdown-item {
   padding-left: 5px;
   padding-right: 5px;
+}
+
+@media (min-width: 1200px) {
+  .dropdown-item {
+    font-size: 35px;
+  }
 }
 
 .animate {
@@ -81,7 +100,7 @@ nav {
   background-color: rgba(0, 0, 0, 0);
 }
 
-/* Hero Content */
+/* Hero Content ------------------------------------------------------- */
 .background-image {
   position: fixed;
   z-index: -99;
@@ -183,9 +202,9 @@ nav {
   background-size: cover;
 }
 
-/* Hero Title Animation */
+/* Hero Title Animation ---------------------------------------  */
 
-/* Hero Title Rest */
+/* Hero Title Rest -------------------------- */
 
 @media (min-width: 768px) {
   .Draper {
@@ -259,7 +278,7 @@ nav {
     }
   }
 
-/* Hero Title Mobile Rest */
+/* Hero Title Mobile Rest --------------------  */
 @media (max-width: 767px) {
   .Travis {
     animation-duration: 1s;
@@ -369,7 +388,7 @@ nav {
   }
 }
 
-/* Hero Title Hover */
+/* Hero Title Hover -------------------------- */
 @media (min-width: 768px) {
   .author:hover .Travis {
     animation-duration: 1s;
@@ -480,14 +499,16 @@ nav {
 }
 
 
-/* SubHero Content */
+/* SubHero Content ------------------------------------------------ */
 .subHero {
   margin-top: 98vh;
 }
 
 @media (max-width: 767px) {
   .subHero {
-    background-color: rgba(245, 245, 220, 1);
+    background-color: rgba(255, 245, 181, 1);
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
   }
 }
 
@@ -499,12 +520,31 @@ nav {
 }
 
 .PortfolioContentSheet {
-  background-color: rgba(245, 245, 220, 1);
+  background-color: rgba(255, 245, 181, 1);
+}
+
+@media (min-width: 768px) {
+  .PortfolioContentSheet {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+  }
 }
 
 .PortfolioContent {
   z-index: 2;
 }
+
+.Portfoliotitle {
+  right: 20px;
+  top: 20px;
+}
+
+
+.Portfoliotitle {
+  background-color: white;
+  border: 1px solid black;
+}
+
 
 .coloredBoxRed {
   height: 20px;
@@ -512,26 +552,51 @@ nav {
   background-color: #be1e2d;
 }
 
+/* FIRST AND SECOND ROW ------------------------- */
+@media (max-width: 767px) {
+  .first {
+    padding-top: 200px;
+  }
+}
+
+.first {
+    padding-top: 100px;
+}
+
 .work-content,
-.work-content-2 {
+.work-content-2,
+.insider {
   flex-direction: column;
 }
 
+.imageTitle_1,
+.imageTitle_2,
+.imageTeaser_1,
+.imageTeaser_2 {
+  text-align: center;
+}
 
 .imageInfo_1,
 .imageInfo_2 {
-  width: 80%;
+  line-height: 1.66667;
+}
+
+h2 a {
+  color: black;
+}
+
+a:hover {
+  text-decoration-color: #be1e2d;
+}
+
+.imageTitle_1 {
+  text-align: center;
 }
 
 @media (max-width: 767px) {
 
   .work-content-2 {
     order: 2 !important;
-  }
-
-  .imageTitle_1,
-  .imageTitle_2 {
-    text-align: center;
   }
 
 
@@ -546,43 +611,31 @@ nav {
   }
 }
 
-
-.imageTitle_1,
-.imageTitle_2,
-h3 a {
-  color: black;
-}
-
-a:hover {
-  text-decoration-color: #be1e2d;
-}
-
-.imageTitle_1 {
-  text-align: center;
+/* ADDITIONAL WORK CONTENT --------------------- */
+.PortfolioOther {
+  left: 25px;
+  background-color: white;
+  border: 1px solid black;
 }
 
 .coloredBoxYellow {
   height: 20px;
   width: 20px;
-  margin-top: 0.8rem;
+  margin-top: 1rem;
   background-color: #ffde17;
 }
 
 .coloredBoxBlue {
   height: 20px;
   width: 20px;
-  margin-top: 0.8rem;
+  margin-top: 1rem;
   background-color: #21409a;
 }
 
-/* Additional Work Content */
 .OtherWorkContent {
+  margin-top: 180px;
   overflow-x: scroll;
   flex-wrap: nowrap !important;
-}
-
-.borderRight {
-  border-right: 4px solid #21409a;
 }
 
 .overlay {
@@ -620,6 +673,19 @@ a:hover {
     color: white;
   }
 }
+
+/* ABOUT ME ----------------------------------- */
+.portfolioAbout {
+  right: 15px;
+  top: 0;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.aboutMeBio {
+  margin-top: 80px;
+}
+
 
 .spacer {
   width: 100%;
