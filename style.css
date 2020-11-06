@@ -506,10 +506,6 @@ nav {
   z-index: 2;
 }
 
-.Portfoliotitle {
-
-}
-
 .coloredBoxRed {
   height: 20px;
   width: 20px;
@@ -522,17 +518,9 @@ nav {
 }
 
 
-.Redinfo,
-.Blueinfo {
-  width: 90%;
-}
-
-.Redinfo {
-  margin-right: 0 !important;
-}
-
-.redScript {
-  text-align: right;
+.imageInfo_1,
+.imageInfo_2 {
+  width: 80%;
 }
 
 @media (max-width: 767px) {
@@ -541,24 +529,27 @@ nav {
     order: 2 !important;
   }
 
-  .redScript,
-  .blueScript {
+  .imageTitle_1,
+  .imageTitle_2 {
     text-align: center;
   }
+
 
   .work-image-2 {
     order: 1 !important;
 
   }
 
-  .Redinfo,
-  .Blueinfo {
+  .imageInfo_1,
+  .imageInfo_2 {
     width: 100%;
   }
 }
 
-.image-description,
-h4 a {
+
+.imageTitle_1,
+.imageTitle_2,
+h3 a {
   color: black;
 }
 
@@ -566,27 +557,32 @@ a:hover {
   text-decoration-color: #be1e2d;
 }
 
+.imageTitle_1 {
+  text-align: center;
+}
+
 .coloredBoxYellow {
   height: 20px;
   width: 20px;
-  margin-top: .8rem;
+  margin-top: 0.8rem;
   background-color: #ffde17;
 }
 
 .coloredBoxBlue {
   height: 20px;
   width: 20px;
-  margin-top: .8rem;
+  margin-top: 0.8rem;
   background-color: #21409a;
 }
 
+/* Additional Work Content */
 .OtherWorkContent {
   overflow-x: scroll;
   flex-wrap: nowrap !important;
 }
 
 .borderRight {
-  border-right: 4px solid #be1e2d;
+  border-right: 4px solid #21409a;
 }
 
 .overlay {
@@ -620,7 +616,7 @@ a:hover {
 
   100% {
     opacity: 1;
-    background-color: rgba(33, 64, 154, 0.5);
+    background-color: rgba(255, 222, 23, 0.5);
     color: white;
   }
 }
