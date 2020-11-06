@@ -539,6 +539,19 @@ nav {
   top: 20px;
 }
 
+@media (max-width: 767px) {
+  .Portfoliotitle {
+    left: 20%;
+    right: 20%;
+  }
+}
+
+@media (max-width: 575px) {
+  .Portfoliotitle {
+    left: 9% !important;
+    right: 9% !important;
+  }
+}
 
 .Portfoliotitle {
   background-color: white;
@@ -618,6 +631,20 @@ a:hover {
   border: 1px solid black;
 }
 
+@media (max-width: 767px) {
+  .PortfolioOther {
+    left: 15%;
+    right: 15%;
+  }
+}
+
+@media (max-width: 575px) {
+  .PortfolioOther {
+    left: 9% !important;
+    right: 9% !important;
+  }
+}
+
 .coloredBoxYellow {
   height: 20px;
   width: 20px;
@@ -677,15 +704,20 @@ a:hover {
 /* ABOUT ME ----------------------------------- */
 .portfolioAbout {
   right: 15px;
-  top: 0;
+  top: 10px;
   background-color: white;
   border: 1px solid black;
 }
 
 .aboutMeBio {
-  margin-top: 30px;
+  padding-top: 80px;
 }
 
+@media (max-width: 767px) {
+  .aboutMeBio {
+    padding-bottom: 0 !important;
+  }
+}
 
 .spacer {
   width: 100%;
