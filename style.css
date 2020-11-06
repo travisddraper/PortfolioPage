@@ -11,8 +11,19 @@ nav {
   left: 0;
 }
 
-.dropdown-toggle:hover {
-  border: 2px solid red;
+@media (min-width: 768px) {
+  .dropdown-toggle:hover {
+    border: 2px solid #be1e2d;
+    border-radius: 5px;
+  }
+}
+
+@media (max-width: 767px) {
+  .dropdown-toggle {
+    background-color: rgba(255, 222, 23, 0.5);
+    border: 1px solid #ffde17;
+    border-radius: 5px;
+  }
 }
 
 .dropdown-toggle::after {
@@ -59,13 +70,13 @@ nav {
 }
 
 .one:hover {
-  color: #be1e2d;
+  color: #21409a;
   font-weight: bold;
   background-color: rgba(0, 0, 0, 0);
 }
 
 .two:hover {
-  color: #21409a;
+  color: #be1e2d;
   font-weight: bold;
   background-color: rgba(0, 0, 0, 0);
 }
@@ -397,7 +408,7 @@ nav {
   }
 }
 
-  @keyframes TravisHover {
+@keyframes TravisHover {
     0% {
       transform: translateX(0);
       color: white;
@@ -474,9 +485,17 @@ nav {
   margin-top: 98vh;
 }
 
-.container-fluid {
-  padding-left: 60px;
-  padding-right: 60px;
+@media (max-width: 767px) {
+  .subHero {
+    background-color: rgba(245, 245, 220, 1);
+  }
+}
+
+@media (min-width: 768px) {
+  .container-fluid {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
 }
 
 .PortfolioContentSheet {
@@ -502,17 +521,45 @@ nav {
   flex-direction: column;
 }
 
-.info {
+
+.Redinfo,
+.Blueinfo {
   width: 90%;
+}
+
+.Redinfo {
+  margin-right: 0 !important;
+}
+
+.redScript {
+  text-align: right;
+}
+
+@media (max-width: 767px) {
+
+  .work-content-2 {
+    order: 2 !important;
+  }
+
+  .redScript,
+  .blueScript {
+    text-align: center;
+  }
+
+  .work-image-2 {
+    order: 1 !important;
+
+  }
+
+  .Redinfo,
+  .Blueinfo {
+    width: 100%;
+  }
 }
 
 .image-description,
 h4 a {
   color: black;
-}
-
-.redScript {
-  text-align: right;
 }
 
 a:hover {
@@ -524,6 +571,18 @@ a:hover {
   width: 20px;
   margin-top: .8rem;
   background-color: #ffde17;
+}
+
+.coloredBoxBlue {
+  height: 20px;
+  width: 20px;
+  margin-top: .8rem;
+  background-color: #21409a;
+}
+
+.OtherWorkContent {
+  overflow-x: scroll;
+  flex-wrap: nowrap !important;
 }
 
 .borderRight {
@@ -566,36 +625,7 @@ a:hover {
   }
 }
 
-.AboutMe {
-  z-index: -999;
-  margin-top: 28vh;
-  background-color: rgba(245, 245, 220, 1);
-}
-
-.AboutMeContainer {
-  z-index: 999 !important;
-}
-
-.color {
-  background-color: rgba(245, 245, 220, 1);
-}
-
-.bigBlock {
-  margin-top: 34vh;
-  height: 400px;
-}
-/*
-.overlay {
-  position: absolute;
-  bottom: 0;
-  background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.5);
-  color: #f1f1f1;
+.spacer {
   width: 100%;
-  transition: 0.5s ease;
-  opacity: 0;
-  color: white;
-  font-size: 20px;
-  padding: 20px;
-  text-align: center;
+  margin-top: 65vh;
 }
