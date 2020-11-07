@@ -537,12 +537,22 @@ nav {
 .Portfoliotitle {
   right: 20px;
   top: 20px;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.coloredBoxRed {
+  height: 20px;
+  width: 20px;
+  background-color: #be1e2d;
+  margin-top: 1.3rem;
 }
 
 @media (max-width: 767px) {
   .Portfoliotitle {
     left: 20%;
     right: 20%;
+    margin-top: 20px;
   }
 
   #Projects {
@@ -557,18 +567,6 @@ nav {
   }
 }
 
-.Portfoliotitle {
-  background-color: white;
-  border: 1px solid black;
-}
-
-
-.coloredBoxRed {
-  height: 20px;
-  width: 20px;
-  background-color: #be1e2d;
-}
-
 /* FIRST AND SECOND ROW ------------------------- */
 @media (max-width: 767px) {
   .first {
@@ -578,6 +576,12 @@ nav {
 
 .first {
     padding-top: 100px;
+}
+
+@media (max-width: 767px) {
+  .work-image {
+    padding-top: 50px;
+  }
 }
 
 .work-content,
@@ -665,28 +669,27 @@ a:hover {
   }
 
   .coloredBoxYellow {
-    margin-top: 0.5rem !important;
+    margin-top: 0.8rem !important;
   }
 }
 
 .coloredBoxYellow {
-  height: 20px;
-  width: 20px;
-  margin-top: 1rem;
+  height: 15px;
+  width: 15px;
+  margin-top: 1.3rem;
   background-color: #ffde17;
-}
-
-.coloredBoxBlue {
-  height: 20px;
-  width: 20px;
-  margin-top: 1rem;
-  background-color: #21409a;
 }
 
 .OtherWorkContent {
   margin-top: 140px;
   overflow-x: scroll;
   flex-wrap: nowrap !important;
+}
+
+@media (max-width: 767px) {
+  .OtherWorkContent {
+    padding-left: 0 !important;
+  }
 }
 
 .overlay {
@@ -744,6 +747,13 @@ a:hover {
   top: 10px;
   background-color: white;
   border: 1px solid black;
+}
+
+.coloredBoxBlue {
+  height: 20px;
+  width: 20px;
+  margin-top: 1.3rem;
+  background-color: #21409a;
 }
 
 .aboutMeBio {
